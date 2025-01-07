@@ -1,0 +1,152 @@
+/* Navigation container */
+
+.header{
+    display: flex;
+    background-color: #827d7d;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky; /* Enables sticky behavior */
+    top: 0; /* Sticks to the top of the viewport */
+    z-index: 1000; /* Ensures it stays above other content */
+    
+}
+.header a:hover{
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+
+}
+/* Navigation links */
+.nav-links {
+    display: flex; /* Ensure links are flex items */
+    gap: 20px; /* Add space between links */
+    list-style: none; /* Remove bullets if unordered list */
+    text-decoration: none; /* Remove underlines */
+}
+
+.nav-links a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+
+}
+
+.nav-links a:hover {
+    color: #ff6347; /* Add hover effect */
+}
+
+#concert-today-section{
+    position: relative; /* Enable positioning for child elements */
+    display: flex; /* Ensure it wraps content appropriately */
+    background-size: 100%; /* Set width as needed */ /* Example: Constrain max width */
+    background-image: url(images/bdod.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+}
+
+@media (min-width: 1024px) {
+    #concert-today-section{
+        height: 100vh;
+    }
+}
+
+.overlay-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    border-radius: 10%;
+    justify-content: center;
+}
+
+
+h1{
+    text-align: center;
+    font-size: 30px;
+
+}
+h2{
+    font-size: large;
+    text-align: center;
+    margin: 20px;
+}
+h3{
+    font-size: large;
+}
+h4{
+    font-size: medium;
+}
+
+p{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+button {
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 10px;
+    width: 250px;
+    cursor: pointer;
+}
+
+#agenda-section {
+    margin-top: 20px;
+}
+
+.inner-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* One column for mobile */
+}
+@media (min-width: 768px) {
+    .inner-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns for tablets */
+    }
+}
+@media (min-width: 1024px) {
+    .inner-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns for desktop */
+    }
+}
+
+
+.flex-item {
+    position: relative; /* Enable positioning for child elements */
+    width: 100%; /* Adjust to the required size */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+#gallery-section {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.gallery-grid {
+    display: flex;
+    grid-template-columns: 2;
+  
+}
+
+footer{
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+
+}
